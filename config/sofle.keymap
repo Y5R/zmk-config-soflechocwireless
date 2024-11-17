@@ -23,16 +23,16 @@
             //               | ALT |      | GUI  | LOWER|  ENTER |        | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3        &kp N4    &kp N5                           &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &kp BACKSPACE
-&kp TAB    &kp Q   &kp W   &kp E         &kp R     &kp T                            &kp Y   &kp U      &kp I      &kp O     &kp P     &kp DEL
-&kp LSHFT  &kp A   &kp S   &kp D         &kp F     &kp G                            &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z   &kp X   &kp C         &kp V     &kp B   &kp C_MUTE    &mkp LCLK  &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp ESCAPE
-                   &trans  &kp LEFT_ALT  &kp LGUI  &mo 1   &kp SPACE     &kp RET    &mo 2   &kp RCTRL  &kp RALT   &kp RGUI
+&kp ESC    &kp N1  &kp N2      &kp N3        &kp N4    &kp N5                           &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &kp BACKSPACE
+&kp TAB    &kp Q   &kp W       &kp E         &kp R     &kp T                            &kp Y   &kp U      &kp I      &kp O     &kp P     &kp DEL
+&kp LSHFT  &kp A   &kp S       &kp D         &kp F     &kp G                            &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z   &kp X       &kp C         &kp V     &kp B   &kp C_MUTE    &mkp LCLK  &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp ESCAPE
+                   &kp K_FIND  &kp LEFT_ALT  &kp LGUI  &mo 1   &kp SPACE     &kp RET    &mo 2   &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+                <&inc_dec_kp C_NEXT K_PREVIOUS>;
         };
 
         lower_layer {
@@ -45,11 +45,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp F1          &kp F2        &kp F3  &kp F4   &kp F5    &kp F6                                &kp F7     &kp F8     &kp F9         &kp F10   &kp F11        &kp F12
-&kp F7          &kp F8        &kp F9  &kp F10  &kp F11   &kp F12                               &kp N6     &kp N7     &kp N8         &kp N9    &kp N0         &kp DEL
-&kp LEFT_SHIFT  &kp N1        &kp N2  &kp N3   &kp N4    &kp NUMBER_5                          &kp MINUS  &kp EQUAL  &kp LBKT       &kp RBKT  &kp BACKSLASH  &kp GRAVE
-&kp LCTRL       &kp NUMBER_6  &kp N7  &kp N8   &kp N9    &kp N0        &trans       &trans     &kp UNDER  &kp PLUS   &kp LBRC       &kp RBRC  &kp PIPE       &kp TILDE
-                              &trans  &trans   &kp LGUI  &trans        &kp SPACE    &kp ENTER  &trans     &kp RCTRL  &kp RIGHT_ALT  &kp RGUI
+&kp F1          &kp F2        &kp F3      &kp F4        &kp F5    &kp F6                                &kp F7     &kp F8     &kp F9         &kp F10   &kp F11        &kp F12
+&kp F7          &kp F8        &kp F9      &kp F10       &kp F11   &kp F12                               &kp N6     &kp N7     &kp N8         &kp N9    &kp N0         &kp DEL
+&kp LEFT_SHIFT  &kp N1        &kp N2      &kp N3        &kp N4    &kp NUMBER_5                          &kp MINUS  &kp EQUAL  &kp LBKT       &kp RBKT  &kp BACKSLASH  &kp GRAVE
+&kp LCTRL       &kp NUMBER_6  &kp N7      &kp N8        &kp N9    &kp N0        &trans       &trans     &kp UNDER  &kp PLUS   &kp LBRC       &kp RBRC  &kp PIPE       &kp TILDE
+                              &kp K_FIND  &kp LEFT_ALT  &kp LGUI  &trans        &kp SPACE    &kp ENTER  &trans     &kp RCTRL  &kp RIGHT_ALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -68,7 +68,7 @@
 &kp TAB     &trans        &trans        &trans           &trans        &trans                                 &trans    &trans     &trans         &trans    &trans  &kp DEL
 &kp LSHFT   &kp EXCL      &kp AT        &kp HASH         &kp DLLR      &kp PRCNT                              &trans    &kp UP     &trans         &trans    &trans  &trans
 &kp LCTRL   &kp CARET     &kp AMPS      &kp KP_MULTIPLY  &kp LPAR      &kp RPAR      &bl BL_TOG    &trans     &kp LEFT  &kp DOWN   &kp RIGHT      &trans    &trans  &trans
-                          &trans        &kp LEFT_ALT     &kp LGUI      &trans        &kp SPACE     &kp ENTER  &trans    &kp RCTRL  &kp RIGHT_ALT  &kp RGUI
+                          &kp K_FIND    &kp LEFT_ALT     &kp LGUI      &trans        &kp SPACE     &kp ENTER  &trans    &kp RCTRL  &kp RIGHT_ALT  &kp RGUI
             >;
 
             sensor-bindings =

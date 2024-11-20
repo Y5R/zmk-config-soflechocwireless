@@ -64,11 +64,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4                           &trans    &trans    &trans     &trans     &trans  &kp BACKSPACE
-&kp TAB     &trans        &trans        &trans           &trans        &trans                                 &trans    &trans    &trans     &trans     &trans  &kp DEL
-&kp LSHFT   &kp EXCL      &kp AT        &kp HASH         &kp DLLR      &kp PRCNT                              &trans    &kp UP    &trans     &trans     &trans  &trans
-&kp LCTRL   &kp CARET     &kp AMPS      &kp KP_MULTIPLY  &kp LPAR      &kp RPAR      &bl BL_TOG    &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans  &trans
-                          &trans        &kp LEFT_GUI     &kp LEFT_ALT  &trans        &kp SPACE     &kp ENTER  &trans    &kp RALT  &kp RGUI   &kp RCTRL
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4                           &bl BL_TOG  &bl BL_DEC  &bl BL_INC  &trans     &trans  &kp BACKSPACE
+&kp TAB     &trans        &trans        &trans           &trans        &trans                                 &trans      &trans      &trans      &trans     &trans  &kp DEL
+&kp LSHFT   &kp EXCL      &kp AT        &kp HASH         &kp DLLR      &kp PRCNT                              &trans      &kp UP      &trans      &trans     &trans  &trans
+&kp LCTRL   &kp CARET     &kp AMPS      &kp KP_MULTIPLY  &kp LPAR      &kp RPAR      &bl BL_TOG    &trans     &kp LEFT    &kp DOWN    &kp RIGHT   &trans     &trans  &trans
+                          &trans        &kp LEFT_GUI     &kp LEFT_ALT  &trans        &kp SPACE     &kp ENTER  &trans      &kp RALT    &kp RGUI    &kp RCTRL
             >;
 
             sensor-bindings =
